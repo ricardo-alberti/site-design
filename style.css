@@ -1,4 +1,76 @@
-h1
-{
-	color:red;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	background-color: black;
+	height: 100%;
+}
+
+ul {
+	font-family: Verdana, sans-serif;
+	width: 100%;
+	opacity: 0.9;
+	overflow: hidden;
+	position: absolute;
+	z-index: 5;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	font-size: 20px;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+} 
+	
+li a:hover {
+	background-color:#111;
+}
+
+.bg {
+	position: relative;
+	opacity: ;
+	background-image: url("images/img0.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form {
+	float: right;
+}
+
+input {
+	
+}
+
+input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+i {
+	float: right;
+	padding: 8px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
 }
