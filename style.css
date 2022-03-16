@@ -1,4 +1,5 @@
 * {
+	font-family: 'IBM Plex Sans', sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -10,15 +11,12 @@ body, html {
 }
 
 ul {
-	font-family: Verdana, sans-serif;
 	width: 100%;
 	opacity: 0.9;
 	overflow: hidden;
 	position: absolute;
 	z-index: 5;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 	background-color: #333;
 }
 
@@ -41,7 +39,6 @@ li a:hover {
 }
 
 .bg {
-	transition: 3s ease;
 	position: relative;
 	background-image: url("images/img0.jpg");
 	height: 95%;
@@ -51,8 +48,9 @@ li a:hover {
 }
 
 form {
+	transition: 1s;
 	width: 50%;
-	z-index: 7;
+	z-index: 4;
 	position: absolute;
 	height: 100%;
 	margin-left:25%;
@@ -61,15 +59,11 @@ form {
 	justify-content: center;
 }
 
-input {
-	width: 50%;
-}
-
 input[type=text] {
 	width: 100%;
 	color: #444;
 	box-sizing: border-box;
-	border: 2px solid #333;	
+	border: 2px solid #555;	
 	border-radius: 4px;
 	font-size: 16px;
 	background-color: white;
@@ -77,5 +71,45 @@ input[type=text] {
 	background-image: url('images/searchicon.png');
 	background-repeat: no-repeat;
 	padding: 12px 20px 12px 40px;
+}
+
+.icons {
+	padding: 10px;
+	z-index: 10;
+	margin-top: 550px;
+	position: absolute;
+	font-size: 40px;
+	cursor: pointer;
+	text-shadow: 3px 3px 3px black;	
+}
+
+.fa-facebook {
+	margin-right: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.fa-facebook:hover {
+	color: #999;
+}
+
+.fa-instagram {
+	text-decoration: none;
+	color: #fff;
+}
+
+.fa-instagram:hover {
+	color: #999;
+}
+
+@media screen and (max-width: 480px) {
+	form {
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	li {
+		float: none;
+	}
 }
 
