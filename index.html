@@ -4,26 +4,45 @@
 <head>
     <title>Site Preview</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src="https://kit.fontawesome.com/2981b6a08c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">News</a></li>
-        <li><a href="" class="fa-brands fa-instagram"></a></li>
-        <li><a href="" class="fa-brands fa-facebook"></a></li>
-    </ul>
+        <li><a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 
+        <div id="items" class="items" style="display:none">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Imóveis</a></li>
+        </div><!--items-->
+    </ul>
+    <div class="icons">
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-instagram"></a>
+    </div>
     <form>
         <input type="text"  placeholder="Procurar imóvel" />
     </form>
     
-
     <div id="slide" class="bg"></div>
-    <script src="scripts.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("items");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html> 
