@@ -14,29 +14,31 @@
 </head>
 
 <body>
-    <ul>
-        <li><a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
-
-        <div id="items" class="items" style="display:none">
+        <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <ul id="ul">
+        <div id="items" class="items" style="display: block">
             <li><a href="">Home</a></li>
             <li><a href="">Sobre</a></li>
             <li><a href="">Contato</a></li>
             <li><a href="">Imóveis</a></li>
         </div><!--items-->
     </ul>
-    <div class="icons">
-        <a href="" class="fa-brands fa-facebook"></a>
-        <a href="" class="fa-brands fa-instagram"></a>
-    </div>
     <form>
         <input type="text"  placeholder="Procurar imóvel" />
     </form>
     
-    <div id="slide" class="bg"></div>
+    <div id="slide" class="bg">
+    <div class="icons">
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-brands fa-instagram"></a>
+    </div>
+
+    </div>
 
     <script>
         function myFunction() {
             var x = document.getElementById("items");
+            var y = document.getElementById("ul");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
