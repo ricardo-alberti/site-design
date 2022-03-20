@@ -12,12 +12,10 @@ body, html {
 
 ul {
 	width: 100%;
-	opacity: 0.9;
 	overflow: hidden;
 	position: absolute;
 	z-index: 5;
 	list-style-type: none;
-	background-color: #333;
 }
 
 li {
@@ -40,12 +38,12 @@ li a:hover {
 
 .bg {
 	position: relative;
-	background-image: url("images/img0.jpg");
+	background-image: url("images/img5.jpg");
 	height: 95%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	transition: 9s;
+	transition: 1s;
 }
 
 form {
@@ -110,6 +108,14 @@ input[type=text]:focus {
 	color: #999;
 }
 
+.faixa {
+	width: 100%;
+	background-color: #333;
+	opacity: 0.9;
+	position: absolute;
+	height: 55px;
+	z-index: 1;
+}
 .icon {
 	padding: 2px 10px;
 	position: absolute;
@@ -118,7 +124,7 @@ input[type=text]:focus {
 	text-shadow: 2px 4px 2px black;	
 	color: #fff;
 	font-size: 40px;
-	z-index: 6;
+	z-index: 7;
 }
 
 .items li:first-child {
@@ -130,11 +136,12 @@ input[type=text]:focus {
 }
 
 @media screen and (min-width: 480px) {
-	#items {
-		display: block;
+	.items {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
+
 	form {
 		width: 80%;
 		margin-left: 10%;
@@ -162,11 +169,16 @@ input[type=text]:focus {
 	}
 
 	ul {
-		background-color: none;
+		opacity:0.9;
+		background-color: #333;
 	}
 
 	.items li:first-child {
 		margin-right: 50px;
+	}
+
+	.bg {
+		height: 90%;
 	}
 }
 	
