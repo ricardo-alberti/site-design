@@ -1,0 +1,14 @@
+{
+  "imoveis": [
+    {
+      "link": "google.com",
+      "img": "images/img0.jpg",
+      "price": "R$ 20.000",
+      "local": "Bento Gonçalves",
+      "adress": "Rua cass120129",
+      "bathroons": 6,
+      "bedroons": 3, 
+      "garages": 2 
+    }
+  ]
+}
