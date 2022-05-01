@@ -1,19 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html>
 
 <head>
     <title>Site Preview</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="images/icon.png">
     <script src="https://kit.fontawesome.com/2981b6a08c.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 </head>
 
 <body>
-        <div class="faixa">
-    </div>
 
         <ul id="nav">
-        <div id="items" class="items" style="">
+        	<div id="items" class="items" style="">
                 <li><a class="fa-solid fa-house"></a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre</a></li>
@@ -21,9 +24,10 @@
                 <li><a href="">Imóveis</a></li>
 
                 <li>
+                    <a class="fa-solid fa-envelope"></a>
                     <a href="" class="fa-brands fa-facebook"></a>
                     <a href="" class="fa-brands fa-instagram"></a>
-                    <a href="" class="fa-brands fa-whatsapp">  54 99943 8875</a>
+                    <a href="" class="fa-brands fa-whatsapp"><span>  54 99943 8875</span></a>
                 </li>
 
             </div><!--items-->
@@ -31,9 +35,10 @@
 
     <ul id="nav2">
 
-        <li><a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <li><a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 
             <li  class="">
+                <a class="fa-solid fa-envelope"></a>
                 <a href="" class="fa-brands fa-facebook"></a>
                 <a href="" class="fa-brands fa-instagram"></a>
                 <a href="" class="fa-brands fa-whatsapp"><span>  54 99943 8875</span></a>
@@ -48,13 +53,104 @@
         </li>
     </ul>
 
-    <form>
-        <input type="text"  placeholder="Procurar imóvel" />
-    </form>
-    
     <div id="slide" class="bg">
+        <form>
+            <div>
+            <input type="text" id="" name=""  placeholder="Pesquisar Imóvel ou Código #32344">
+            
+            <select id="" name="">
+                <option value="">Comprar</option>
+                <option value="">Alugar</option>
+            </select>
 
+            <select id="" name="">
+                <option value="">Tipo de Apartamento</option>
+                <option value="">Apartamento</option>
+                <option value="">Casa Comer.</option>
+                <option value="">Casa Em Condomínio</option>
+                <option value="">Jk</option>
+                <option value="">Loja</option>
+            </select>
+
+            <select id="" name="">
+                <option value="">Faixa de Valor</option>
+                <option value="">R$10000 a R$20000</option>
+                <option value="">R$20000 a R$30000</option>
+                <option value="">R$30000 a R$40000</option>
+                <option value="">R$40000+</option>
+            </select>
+
+            </div>
+        </form>
     </div>
+    
+    <div class="destaques">
+
+        <h1>VENDAS EM DESTAQUE</h1> 
+
+        <div class="container">
+
+
+        <div id="imovel" class="imovel">
+            <a id="link0" href="">
+            <img id="img0" class="" src=""/>
+            <div class="container">
+                <div class="sell"><span id="sell0"></span></div>
+                <div class="price"><span id="price0"></span></div>
+            </div>
+            <div id="local0" class="local"></div>
+            <div class="adress">
+                <i class="fa-solid fa-location-dot"><span id="adress0"></span></i> 
+            </div>
+            <div class="propertys">
+                <a class="fa-solid fa-chart-area"><span id="area0"></span></a>
+                <a class="fa-solid fa-bath"><span id="bathroons0"></span></a>
+                <a class="fa-solid fa-bed"><span id="bedroons0"></span></a>
+                <a class="fa-solid fa-car"><span id="garages0"></span></a>
+            </div></a>
+        </div>
+
+        <div class="imovel">
+            <a id="link1" href="">
+            <img id="img1" class="" src=""/>
+            <div class="container">
+                <div class="sell"><span id="sell1"></span></div>
+                <div class="price"><span id="price1"></span></div>
+            </div>
+            <div id="local1" class="local"></div>
+            <div class="adress">
+                <i class="fa-solid fa-location-dot"><span id="adress1"></span></i> 
+            </div>
+            <div class="propertys">
+                <a class="fa-solid fa-chart-area"><span id="area1"></span></a>
+                <a class="fa-solid fa-bath"><span id="bathroons1"></span></a>
+                <a class="fa-solid fa-bed"><span id="bedroons1"></span></a>
+                <a class="fa-solid fa-car"><span id="garages1"></span></a>
+            </div></a>
+        </div>
+
+        <div class="imovel">
+            <a id="link2" href="">
+            <img id="img2" class="" src=""/>
+            <div class="container">
+                <div class="sell"><span id="sell2"></span></div>
+                <div class="price"><span id="price2"></span></div>
+            </div>
+            <div id="local2" class="local"></div>
+            <div class="adress">
+                <i class="fa-solid fa-location-dot"><span id="adress2"></span></i> 
+            </div>
+            <div class="propertys">
+                <a class="fa-solid fa-chart-area"><span id="area2"></span></a>
+                <a class="fa-solid fa-bath"><span id="bathroons2"></span></a>
+                <a class="fa-solid fa-bed"><span id="bedroons2"></span></a>
+                <a class="fa-solid fa-car"><span id="garages2"></span></a>
+            </div></a>
+        </div>
+
+        </div><!--container-->
+
+    </div><!--destaques-->
 
     <script>
         function myFunction() {
@@ -66,6 +162,25 @@
                 x.style.display = "block";
             }
         }
+
+        fetch("imoveis.json")
+            .then( response => response.json()) 
+            .then( data => {
+                for(var i = 0; i < data.imoveis.length; i++)
+                { 
+                    document.querySelector("#local"+i).innerText = data.imoveis[i].local
+                    document.querySelector("#adress"+i).innerText = data.imoveis[i].adress
+                    document.querySelector("#img"+i).src = data.imoveis[i].img
+                    document.querySelector("#price"+i).innerText = data.imoveis[i].price
+                    document.querySelector("#sell"+i).innerText = data.imoveis[i].sell
+                    document.querySelector("#link"+i).href = data.imoveis[i].link
+                    document.querySelector("#area"+i).innerText = data.imoveis[i].area
+                    document.querySelector("#bedroons"+i).innerText = data.imoveis[i].bedroons
+                    document.querySelector("#bathroons"+i).innerText = data.imoveis[i].bathroons
+                    document.querySelector("#garages"+i).innerText = data.imoveis[i].garages
+                    console.log(data) 
+                }
+        })
     </script>
 </body>
 </html> 
