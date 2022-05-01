@@ -1,14 +1,40 @@
 {
   "imoveis": [
     {
-      "link": "google.com",
+      "link": "",
       "img": "images/img0.jpg",
       "price": "R$ 20.000",
+      "sell": "VENDA",
       "local": "Bento Gonçalves",
-      "adress": "Rua cass120129",
+      "adress": "Rua X",
       "bathroons": 6,
+      "area": 170.5,
       "bedroons": 3, 
       "garages": 2 
+    },
+    { 
+      "link": "",
+      "img": "images/img2.jpg",
+      "price": "R$ 110.000",
+      "sell": "VENDA",
+      "local": "Mundo da Lua",
+      "adress": "Rua foda",
+      "bathroons": 2,
+      "area": 300.7,
+      "bedroons": 4, 
+      "garages": 4 
+    },
+    {
+      "link": "",
+      "img": "images/img5.jpg",
+      "price": "R$ 20.000",
+      "sell": "VENDA",
+      "local": "Local muito louco",
+      "adress": "Rua 7",
+      "bathroons": 4,
+      "area": 20,
+      "bedroons": 3, 
+      "garages": 9 
     }
   ]
 }
