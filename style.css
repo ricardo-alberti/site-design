@@ -250,6 +250,10 @@ select:hover {
 		display: block;
 	}
 
+	input[type=text]{
+		margin-top: 35%;
+	}
+
 	select {
 		margin-top: 5px;
 		margin-left: 15%;
