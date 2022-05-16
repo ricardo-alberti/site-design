@@ -233,13 +233,9 @@ select:hover {
 	#nav2{
 		display:none;
 	}
-	.imovel {
-		width: 50%;
-		margin-left: 25%;
-	}
-	.container {
-		display: block;
-	}
+	.container{
+		display: flex;
+	}	
 }
 
 @media screen and (max-width: 704px) {
