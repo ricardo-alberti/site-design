@@ -20,6 +20,10 @@ ul {
 	list-style-type: none;
 }
 
+#nav, #nav2 {
+	position: fixed;
+}
+
 li {
 	display:inline-block;
 	cursor: pointer;
@@ -68,10 +72,10 @@ li a:hover {
 
 form {
 	transition: 1s;
-	width: 50%;
+	width: 70%;
 	position: absolute;
 	height: 100%;
-	margin-left:25%;
+	margin-left:15%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -80,10 +84,8 @@ form {
 input[type=text] {
 	outline: none;
 	width: 100%;
-	transition: 2s ease;
 	color: #000;
 	box-sizing: border-box;
-	border: 3px solid #ccc;	
 	border-radius: 4px;
 	font-size: 14px;
 	background-color: white;
@@ -93,17 +95,13 @@ input[type=text] {
 	padding: 12px 20px 12px 40px;
 }
 
-input[type=text]:focus {
-	border: 3px solid #555;
-}
-
 span {
 	font-size: 14px;
 }
 
 .bg {
 	position: relative;
-	background-image: url("images/img00.jpg");
+	background-image: url("images/img5.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -114,7 +112,7 @@ select {
 	height: 30px;
 	border-radius: 5px;
 	margin: 0;
-	width: 32.6%;
+	width: 32.8%;
 	font-size: 13px;
 	cursor: pointer;
 	outline: none;
@@ -139,7 +137,8 @@ select:hover {
 	justify-content: center;
 }
 
-.destaques h1 {
+h1 {
+	color: #fff;
 	font-weight: 700;
 	margin-top: 30px;
 	font-size: 25px;
@@ -150,7 +149,6 @@ select:hover {
 	border-radius: 10px;
 	text-align: center;
 	background-color: #222;
-	transition: 0.4s;
 	width: 80%;
 	cursor: pointer;
 	margin: 40px;
@@ -189,6 +187,10 @@ select:hover {
 	font-size: 12px;
 }
 
+.adress span {
+	margin-left: 0.5em;
+}	
+
 .fa-location-dot {
 	margin: 0;
 	font-size: 12px;
@@ -222,6 +224,11 @@ select:hover {
 	height: 240px;
 }
 
+.contato {
+	padding: 10px;
+	background-color: #213123;
+}
+
 @media screen and (max-width: 326px) {
 	.fa-brands span {
 		display: none;
@@ -238,17 +245,18 @@ select:hover {
 	}	
 }
 
-@media screen and (max-width: 704px) {
+@media screen and (max-width: 912px) {
 	.imovel {
-		width: 90%;
-		margin-left: 5%;
+		width: 50%;
+		margin-left: 25%;
 	}
 	.container {
 		display: block;
 	}
-
+}
+@media screen and (max-width: 704px) {
 	input[type=text]{
-		margin-top: 35%;
+		margin-top: 30%;
 	}
 
 	select {
@@ -309,4 +317,12 @@ select:hover {
 		height: 100%;
 	}
 }
-	
+	@media screen and (max-width: 512px) {
+	.imovel {
+		width: 90%;
+		margin-left: 5%;
+	}
+.container {
+		display: block;
+	}
+}
