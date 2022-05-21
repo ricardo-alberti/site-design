@@ -87,8 +87,6 @@ input[type=text] {
 	box-sizing: border-box;
 	font-size: 14px;
 	background-color: white;
-	background-position: 10px 10px; 
-	background-repeat: no-repeat;
 	padding: 12px 20px 12px 40px;
 }
 
@@ -113,6 +111,7 @@ span {
 }
 
 .bg {
+	position:fixed;
 	position: relative;
 	background-image: url("images/img5.jpg");
 	height: 100%;
@@ -295,8 +294,8 @@ h1 {
 
 	form {
 		font-size: 10px;
-		width: 80%;
-		margin-left: 10%;
+		width: 90%;
+		margin-left: 5%;
 	}
 
 	.icon {
