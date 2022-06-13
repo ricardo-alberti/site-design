@@ -87,17 +87,18 @@ input[type=text] {
 	box-sizing: border-box;
 	font-size: 14px;
 	background-color: white;
+	border:none;
 	padding: 12px 20px 12px 40px;
 }
 
 form button {
 	float: right;
 	width: 20%;
-	padding: 11px;
+	padding: 9px;
 	background: #848999;
 	color: white;
 	font-size: 17px;
-	border: 1px solid grey;
+	border: 1px solid gray;
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
 }
@@ -121,6 +122,7 @@ span {
 }
 
 select {
+	border-radius: 5px;
 	height: 30px;
 	margin: 0;
 	width: 32.8%;
