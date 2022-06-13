@@ -78,6 +78,25 @@ form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	animation: loading-fade 0.5s ease;
+	}
+
+@keyframes loading-fade
+{
+  0%
+  {
+	opacity: 0;
+    bottom: -200px;
+  }
+  50%
+  {
+	  opacity: 0.9;
+  }
+  100%
+  {
+	opacity: 1;
+    bottom: 0px;
+  }
 }
 
 input[type=text] {
