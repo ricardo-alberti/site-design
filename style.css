@@ -82,6 +82,7 @@ form {
 
 input[type=text] {
 	outline: none;
+	border-radius: 5px;
 	width: 80%;
 	color: #000;
 	box-sizing: border-box;
@@ -93,6 +94,7 @@ input[type=text] {
 
 form button {
 	float: right;
+	border-radius: 5px;
 	width: 20%;
 	padding: 9px;
 	background: #848999;
@@ -123,9 +125,10 @@ span {
 
 select {
 	border-radius: 5px;
+	margin-left: -1px;
 	height: 30px;
 	margin: 0;
-	width: 32.8%;
+	width: 33%;
 	font-size: 13px;
 	cursor: pointer;
 	outline: none;
@@ -133,6 +136,7 @@ select {
 	text-align: center;
 	background-color: #555;
 	color: white;
+	margin-right: -1px;
 }
 
 select:hover {
