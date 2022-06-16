@@ -135,7 +135,7 @@ span {
 .bg {
 	position:fixed;
 	position: relative;
-	background-image: url("images/imgk.jpg");
+	background-image: url("images/r-architecture-2gDwlIim3Uw-unsplash.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -160,7 +160,7 @@ select {
 
 select:hover {
 	background-color: #333;
-	transition: 0.5s ease;
+	transition: 1s ease;
 }
 
 .destaques {
