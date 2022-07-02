@@ -130,6 +130,7 @@ span {
 
 .container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
@@ -142,6 +143,7 @@ h1 {
 }
 
 .imovel {
+	flex: 25%;
 	border-radius: 10px;
 	text-align: center;
 	background-color: #222;
@@ -299,19 +301,23 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 912px) {
+@media screen and (min-width: 908px) {
 	.imovel {
-		width: 50%;
-		margin-left: 25%;
-	}
-	.container {
-		display: block;
+		flex: 0%;
+    	max-width: 100%;
 	}
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 732px) {
 	.imovel {
-		width: 90%;
-		margin-left: 5%;
+		flex: 100%;
+    	max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 532px) {
+	.imovel {
+		flex: 100%;
+    	max-width: 100%;
 	}
 }
