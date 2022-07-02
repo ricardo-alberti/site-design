@@ -1,5 +1,5 @@
 * {
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -71,32 +71,13 @@ li a:hover {
 }
 
 form {
-	width: 70%;
+	width: 50%;
 	position: absolute;
 	height: 100%;
-	margin-left:15%;
+	margin-left:25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	animation: loading-fade 0.5s ease;
-	}
-
-@keyframes loading-fade
-{
-  0%
-  {
-	opacity: 0;
-    bottom: -200px;
-  }
-  50%
-  {
-	  opacity: 0.9;
-  }
-  100%
-  {
-	opacity: 1;
-    bottom: 0px;
-  }
 }
 
 input[type=text] {
@@ -107,7 +88,7 @@ input[type=text] {
 	box-sizing: border-box;
 	font-size: 14px;
 	background-color: white;
-	border:none;
+	border: none;
 	padding: 12px 20px 12px 40px;
 }
 
@@ -133,34 +114,12 @@ span {
 }
 
 .bg {
-	position:fixed;
 	position: relative;
 	background-image: url("images/r-architecture-2gDwlIim3Uw-unsplash.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-select {
-	border-radius: 5px;
-	margin-left: -1px;
-	height: 30px;
-	margin: 0;
-	width: 33%;
-	font-size: 13px;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	text-align: center;
-	background-color: #555;
-	color: white;
-	margin-right: -1px;
-}
-
-select:hover {
-	background-color: #333;
-	transition: 1s ease;
 }
 
 .destaques {
@@ -277,39 +236,16 @@ h1 {
 	#nav2{
 		display:none;
 	}
-	.container{
-		display: flex;
-	}	
 }
 
-@media screen and (max-width: 912px) {
-	.imovel {
-		width: 50%;
-		margin-left: 25%;
-	}
-	.container {
-		display: block;
-	}
-}
 @media screen and (max-width: 704px) {
 	input[type=text]{
 		width: 60%;
-		margin-top: 30%;
 		margin-left: 10%;
 	}
 	form button {
-		margin-top: 30%;
 		margin-right: 10%;
 
-	}
-
-
-
-	select {
-		margin-left: 10%;
-		font-size: 14px;
-		width: 80%;
-		border-bottom: 3px solid #444;
 	}
 
 	#nav {
@@ -362,12 +298,20 @@ h1 {
 		height: 100%;
 	}
 }
-	@media screen and (max-width: 512px) {
+
+@media screen and (max-width: 912px) {
+	.imovel {
+		width: 50%;
+		margin-left: 25%;
+	}
+	.container {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 512px) {
 	.imovel {
 		width: 90%;
 		margin-left: 5%;
-	}
-.container {
-		display: block;
 	}
 }
