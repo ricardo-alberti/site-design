@@ -14,7 +14,6 @@ fetch("imoveis.json")
     for(var i = 0; i < data.imoveis.length; i++)
     { 
         document.querySelector("#local"+i).innerText = data.imoveis[i].local
-        document.querySelector("#adress"+i).innerText = data.imoveis[i].adress
         document.querySelector("#img"+i).src = data.imoveis[i].img
         document.querySelector("#price"+i).innerText = data.imoveis[i].price
         document.querySelector("#sell"+i).innerText = data.imoveis[i].sell
@@ -23,7 +22,6 @@ fetch("imoveis.json")
         document.querySelector("#bedroons"+i).innerText = data.imoveis[i].bedroons
         document.querySelector("#bathroons"+i).innerText = data.imoveis[i].bathroons
         document.querySelector("#garages"+i).innerText = data.imoveis[i].garages
-        console.log(data) 
     }
 })
 
