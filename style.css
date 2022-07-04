@@ -282,23 +282,19 @@ h1 {
 	}
 }
 
-@media screen and (min-width: 908px) {
-	.imovel {
-		flex: 0%;
-    	max-width: 100%;
-	}
-}
+
 
 @media screen and (max-width: 732px) {
 	.imovel {
-		flex: 100%;
-    	max-width: 50%;
+		flex: 40%;
+    	max-width: 60%;
 	}
 }
 
-@media screen and (max-width: 532px) {
+@media screen and (max-width: 452px) {
 	.imovel {
 		flex: 100%;
     	max-width: 100%;
 	}
 }
+
