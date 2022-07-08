@@ -114,12 +114,14 @@ form button:hover{
 	text-shadow: 1px 1px 2px black;
 	display: list-item;
 	color: #fff;
+	font-weight: 700;
 	list-style-type: disc;
-	transition: 0.5s ease;
+	transition: 0.2s ease;
 }
 
 .bg span a:hover {
-	color: #aaa;
+	color: #000;
+	text-shadow: 1px 1px 4px #fff;
 }
 span {
 	font-size: 14px;
@@ -222,7 +224,7 @@ h1 {
 }
 
 footer {
-	height: 500px;
+	height: 200px;
 }
 
 @media screen and (max-width: 326px) {
@@ -319,3 +321,11 @@ footer {
 	}
 }
 
+@media screen and (max-height: 322px) {
+	.bg span {
+		margin-top: 160px;
+	}
+	.bg span a {
+		padding: 0px;
+	}
+}
