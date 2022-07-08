@@ -102,7 +102,7 @@ form button:hover{
 
 .bg span {
 	column-count: 2;
-	font-size: 16px;
+	font-size: 14px;
 	margin-top: 300px;
 	position: absolute;
 	align-items: center;
@@ -110,7 +110,7 @@ form button:hover{
 }
 
 .bg span a {
-	padding: 25px;
+	padding: 5px;
 	text-shadow: 1px 1px 2px black;
 	display: list-item;
 	color: #fff;
@@ -221,6 +221,10 @@ h1 {
 	background-color: #213123;
 }
 
+footer {
+	height: 500px;
+}
+
 @media screen and (max-width: 326px) {
 	.fa-brands span {
 		display: none;
@@ -295,9 +299,13 @@ h1 {
 	}
 }
 
-
-
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 1004px) {
+	.bg span {
+		column-count: 1;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 834px) {
 	.imovel {
 		flex: 40%;
     	max-width: 60%;
