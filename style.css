@@ -10,6 +10,21 @@ body, html {
 	height: 100%;
 }
 
+.fa-whatsapp-square {
+	position: fixed;
+	z-index: 10;
+	bottom: 5px;
+	right: 5px;
+	margin: 30px;
+	font-size: 60px;
+	color: green;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.fa-whatsapp-square:hover {
+	color: #eee;
+}
 ul {
 	opacity:0.9;
 	background-color: #333;
@@ -224,7 +239,11 @@ h1 {
 }
 
 footer {
-	height: 200px;
+	margin-top: 100px;
+	padding: 10px;
+	background-color: #111;
+	text-align: center;
+	color: #999;
 }
 
 @media screen and (max-width: 326px) {
@@ -276,7 +295,7 @@ footer {
 		display: block;
 	}
 
-	.fa-brands {
+	li .fa-brands {
 		padding: 14px 10px;
 		font-size: 18px;
 	}
@@ -299,6 +318,9 @@ footer {
 	.bg {
 		height: 100%;
 	}
+	.fa-whatsapp-square {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1004px) {
@@ -318,6 +340,11 @@ footer {
 	.imovel {
 		flex: 100%;
     	max-width: 100%;
+	}
+	.fa-whatsapp-square {
+		display: none;
+		font-size: 0px;
+
 	}
 }
 
