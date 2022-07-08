@@ -6,7 +6,7 @@
 }
 
 body, html {
-	background-color: #333;
+	background-color: #222;
 	height: 100%;
 }
 
@@ -34,18 +34,8 @@ li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 15px;
 	text-decoration: none;
-}
-
-.fa-brands {
-	font-size: 18px;
-	padding-bottom: 17px;
-}
-
-.fa-solid {
-	font-size: 18px;
-	padding-bottom: 17px;
 }
 
 .fa-facebook:hover{
@@ -67,7 +57,7 @@ li a {
 
 li a:hover {
 	transition: 0.4s;
-	background-color: #222;
+	background-color: #111;
 }
 
 form {
@@ -88,32 +78,55 @@ input[type=text] {
 	box-sizing: border-box;
 	font-size: 14px;
 	background-color: white;
-	border: none;
 	padding: 12px 20px 12px 40px;
+	border: none;
+	transition: 1s ease;
 }
 
 form button {
 	float: right;
 	border-radius: 5px;
 	width: 20%;
-	padding: 9px;
-	background: #848999;
+	padding: 10px;
+	background: #333;
 	color: white;
 	font-size: 17px;
-	border: 1px solid gray;
+	border: none;
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
 }
 form button:hover{
 	transition: 0.5s ease;
-	background-color: #312433;
+	background-color: #111;
 }
 
+.bg span {
+	column-count: 2;
+	font-size: 16px;
+	margin-top: 300px;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg span a {
+	padding: 25px;
+	text-shadow: 1px 1px 2px black;
+	display: list-item;
+	color: #fff;
+	list-style-type: disc;
+	transition: 0.5s ease;
+}
+
+.bg span a:hover {
+	color: #aaa;
+}
 span {
 	font-size: 14px;
 }
 
 .bg {
+	z-index: 0;
 	position: relative;
 	background-image: url("images/r-architecture-2gDwlIim3Uw-unsplash.jpg");
 	height: 100%;
@@ -146,13 +159,13 @@ h1 {
 	flex: 25%;
 	border-radius: 10px;
 	text-align: center;
-	background-color: #222;
+	background-color: #333;
 	cursor: pointer;
 	margin: 20px;
 }
 
 .imovel:hover {
-	background-color: #333;
+	background-color: #111;
 	transition: 0.5s ease;
 	box-shadow: 2px 2px 5px black;
 }
@@ -284,14 +297,14 @@ h1 {
 
 
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 832px) {
 	.imovel {
 		flex: 40%;
     	max-width: 60%;
 	}
 }
 
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 552px) {
 	.imovel {
 		flex: 100%;
     	max-width: 100%;

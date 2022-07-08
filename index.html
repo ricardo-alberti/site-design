@@ -14,27 +14,21 @@
 </head>
 
 <body>
-
-        <ul id="nav">
-        	<div id="items" class="items">
-                <li><a class="fa-solid fa-house"></a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="">Imóveis</a></li>
-
-                <li>
-                    <a href=mailto:"ricardo.alberti.26@gmail.com" class="fa-solid fa-envelope"><span></span></a>
-                    <a href="" class="fa-brands fa-facebook"></a>
-                    <a href="" class="fa-brands fa-instagram"></a>
-                    <a href="" class="fa-brands fa-whatsapp"><span>  54 99943 8875</span></a>
-                </li>
-
-            </div><!--items-->
-        </ul>
+    <ul id="nav">
+        <div id="items" class="items">
+            <li><a class="fa-solid fa-house"></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Imóveis</a></li>
+            <li><a href=mailto:"ricardo.alberti.26@gmail.com" class="fa-solid fa-envelope"><span></span></a></li>
+            <li><a href="" class="fa-brands fa-facebook"></a></li>
+            <li><a href="" class="fa-brands fa-instagram"></a></li>
+            <li><a href="" class="fa-brands fa-whatsapp"><span>  54 99943 8875</span></a></li>
+        </div><!--items-->
+    </ul>
 
     <ul id="nav2">
-
         <li><a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 
             <li  class="">
@@ -56,9 +50,17 @@
     <div id="slide" class="bg">
 
         <form>
-            <input type="text" id="" name=""  placeholder="Pesquisar">
+            <input id="myInput" onkeyup="search()" type="text" placeholder="Pesquisar" autocomplete="off">
             <button type="submit"><i class="fa fa-search"></i></button>
+            <span id="myUL">
+                <div><a href="">bom dia bom dia bom dia comprar</a></div>
+                <div><a href="">outro imovel muito foda g</a></div>
+                <div><a href="">imovel muito legal mesmo aqui alugar</a></div>
+                <div><a href="">bom dia bom dia bom dia bento</a></div>
+                <div><a href="">imovel muito legal mesmo aqui</a></div>
+            </span>
         </form>
+
     </div>
     
     <div class="destaques">
