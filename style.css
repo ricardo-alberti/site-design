@@ -15,7 +15,7 @@ body, html {
 	z-index: 10;
 	bottom: 5px;
 	right: 5px;
-	margin: 30px;
+	margin: 20px;
 	font-size: 60px;
 	color: green;
 	cursor: pointer;
@@ -116,27 +116,28 @@ form button:hover{
 }
 
 .bg span {
-	column-count: 2;
+	width: 70%;
 	font-size: 14px;
 	margin-top: 300px;
 	position: absolute;
+	background-color: rgb(50,50,50,0.7);
+	column-gap: 10px;
 	align-items: center;
+	padding: 15px;
 	justify-content: center;
 }
 
 .bg span a {
+	margin-left: 25%;
 	padding: 5px;
-	text-shadow: 1px 1px 2px black;
 	display: list-item;
 	color: #fff;
-	font-weight: 700;
 	list-style-type: disc;
 	transition: 0.2s ease;
 }
 
 .bg span a:hover {
-	color: #000;
-	text-shadow: 1px 1px 4px #fff;
+	color: #111;
 }
 span {
 	font-size: 14px;
@@ -230,7 +231,7 @@ h1 {
 	border-radius: 10px;
 	padding: 0;
 	width: 100%;
-	height: 340px;
+	height: 300px;
 }
 
 .contato {
@@ -249,6 +250,16 @@ footer {
 @media screen and (max-width: 326px) {
 	.fa-brands span {
 		display: none;
+	}
+}
+@media screen and (max-width: 834px) {
+	.imovel {
+		flex: 40%;
+    	max-width: 60%;
+	}
+	form {
+		width: 70%;
+		margin-left: 15%;
 	}
 }
 
@@ -329,23 +340,17 @@ footer {
 		font-size: 14px;
 	}
 }
-@media screen and (max-width: 834px) {
-	.imovel {
-		flex: 40%;
-    	max-width: 60%;
-	}
-}
+
 
 @media screen and (max-width: 552px) {
 	.imovel {
 		flex: 100%;
     	max-width: 100%;
 	}
-	.fa-whatsapp-square {
+	.bg span {
 		display: none;
-		font-size: 0px;
-
 	}
+
 }
 
 @media screen and (max-height: 322px) {
@@ -356,3 +361,4 @@ footer {
 		padding: 0px;
 	}
 }
+
