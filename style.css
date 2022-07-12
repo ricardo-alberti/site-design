@@ -46,9 +46,7 @@ li {
 
 li a {
 	font-size: 15px;
-	display: block;
 	color: white;
-	text-align: center;
 	padding: 15px;
 	text-decoration: none;
 }
@@ -68,7 +66,6 @@ li a {
 .fa-whatsapp:hover{
 	color: green;
 }
-
 
 li a:hover {
 	transition: 0.4s;
@@ -116,28 +113,27 @@ form button:hover{
 }
 
 .bg span {
-	width: 70%;
+	width: 60%;
 	font-size: 14px;
 	margin-top: 300px;
 	position: absolute;
 	background-color: rgb(50,50,50,0.7);
 	column-gap: 10px;
-	align-items: center;
-	padding: 15px;
-	justify-content: center;
+	padding: 10px;
 }
 
 .bg span a {
-	margin-left: 25%;
+	text-align: center;
+	text-decoration: none;
 	padding: 5px;
 	display: list-item;
 	color: #fff;
 	list-style-type: disc;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 }
 
 .bg span a:hover {
-	color: #111;
+	color: yellow;
 }
 span {
 	font-size: 14px;
