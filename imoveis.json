@@ -1,33 +1,33 @@
 {
   "imoveis": [
     {
-      "link": "",
+      "link": "imoveis/imovel1.html",
       "img": "images/img0.jpg",
-      "price": "R$ 20.000",
+      "price": "R$ 200.000",
       "sell": "VENDA",
-      "local": "Bento Gonçalves",
+      "local": "Amabile Compagnolo, 520",
       "bathroons": 6,
       "area": 170.5,
       "bedroons": 3, 
       "garages": 2 
     },
     { 
-      "link": "",
+      "link": "imoveis/imovel2.html",
       "img": "images/img2.jpg",
       "price": "R$ 110.000",
       "sell": "VENDA",
-      "local": "Mundo da Lua",
+      "local": "Rua Ricardo, 400",
       "bathroons": 2,
       "area": 300.7,
       "bedroons": 4, 
       "garages": 4 
     },
     {
-      "link": "",
+      "link": "imoveis/imovel3.html",
       "img": "images/img4.jpg",
-      "price": "R$ 20.000",
-      "sell": "VENDA",
-      "local": "Local muito louco",
+      "price": "R$ 120.000",
+      "sell": "Alugar",
+      "local": "Rua Camila, 320",
       "bathroons": 4,
       "area": 20,
       "bedroons": 3, 

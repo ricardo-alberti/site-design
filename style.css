@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-transform: lowercase;
 }
 
 body, html {
@@ -17,13 +18,13 @@ body, html {
 	right: 5px;
 	margin: 20px;
 	font-size: 60px;
-	color: green;
 	cursor: pointer;
+	color: #eee;
 	transition: 0.5s ease;
 }
 
 .fa-whatsapp-square:hover {
-	color: #eee;
+	color: #62fc03 ;
 }
 ul {
 	opacity:0.9;
@@ -133,26 +134,18 @@ form button:hover{
 }
 
 .bg span a:hover {
-	color: yellow;
+	color: slategray;
 }
 span {
 	font-size: 14px;
 }
 
 .bg {
-	z-index: 0;
-	position: relative;
 	background-image: url("images/r-architecture-2gDwlIim3Uw-unsplash.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.destaques {
-	width: 100%;
-	height: auto;
-	color: #fff;
 }
 
 .container {
@@ -200,8 +193,8 @@ h1 {
 }
 
 .local {
-	padding:10px;
-	text-transform: uppercase;
+	margin:10px;
+	text-transform: lowercase;
 	font-size: 15px;
 	color: #fff;
 }
