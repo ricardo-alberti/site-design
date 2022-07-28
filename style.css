@@ -1,9 +1,8 @@
 * {
-	font-family: muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+	font-family: ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	text-transform: lowercase;
 }
 
 body, html {
@@ -17,7 +16,7 @@ body, html {
 	bottom: 5px;
 	right: 5px;
 	margin: 20px;
-	font-size: 60px;
+	font-size: 55px;
 	cursor: pointer;
 	color: #eee;
 	transition: 0.5s ease;
@@ -26,13 +25,12 @@ body, html {
 .fa-whatsapp-square:hover {
 	color: #62fc03 ;
 }
+
 ul {
-	opacity:0.9;
 	background-color: #333;
+	z-index: 1;
 	width: 100%;
 	overflow: hidden;
-	position: absolute;
-	z-index: 100;
 	list-style-type: none;
 }
 
@@ -45,37 +43,24 @@ li {
 	cursor: pointer;
 }
 
+span {
+	font-size:	13px;
+}
+
 li a {
 	font-size: 15px;
+	padding: 15px !important;
 	color: white;
-	padding: 15px;
 	text-decoration: none;
-}
-
-.fa-facebook:hover{
-	color: blue;
-}
-
-.fa-envelope:hover{
-	color: red;
-}
-
-.fa-instagram:hover{
-	color: orange;
-}
-
-.fa-whatsapp:hover{
-	color: green;
 }
 
 li a:hover {
 	transition: 0.4s;
-	background-color: #111;
+	background-color: #000;
 }
 
 form {
 	width: 50%;
-	position: absolute;
 	height: 100%;
 	margin-left:25%;
 	display: flex;
@@ -108,19 +93,19 @@ form button {
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
 }
+
 form button:hover{
 	transition: 0.5s ease;
 	background-color: #111;
 }
 
 .bg span {
-	width: 60%;
 	font-size: 14px;
 	margin-top: 300px;
 	position: absolute;
 	background-color: rgb(50,50,50,0.7);
-	column-gap: 10px;
-	padding: 10px;
+	padding: 20px 70px;
+	z-index: 0;
 }
 
 .bg span a {
@@ -135,9 +120,6 @@ form button:hover{
 
 .bg span a:hover {
 	color: slategray;
-}
-span {
-	font-size: 14px;
 }
 
 .bg {
@@ -164,6 +146,7 @@ h1 {
 
 .imovel {
 	flex: 25%;
+	height: 100%;
 	border-radius: 10px;
 	text-align: center;
 	background-color: #333;
@@ -174,7 +157,6 @@ h1 {
 .imovel:hover {
 	background-color: #111;
 	transition: 0.5s ease;
-	box-shadow: 2px 2px 5px black;
 }
 
 .imovel a {
@@ -185,23 +167,24 @@ h1 {
 }
 
 .sell {
-	height: 30px;
+	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 10px 0;
 	text-align: center;
 	width: 100%;
 }
 
 .local {
-	margin:10px;
 	text-transform: lowercase;
 	font-size: 15px;
 	color: #fff;
 }
 
 .price {
+	padding: 5px;
+	margin: 10px 0;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 0.9em;
 	text-align:center;
 	width: 100%;
 	background-color: #444;
@@ -217,10 +200,8 @@ h1 {
 }
 
 .imovel img {
-	border-radius: 10px;
-	padding: 0;
 	width: 100%;
-	height: 300px;
+	height: 100%;
 }
 
 .contato {
@@ -229,22 +210,23 @@ h1 {
 }
 
 footer {
+	font-size: 12px;
 	margin-top: 100px;
-	padding: 10px;
+	padding: 5px;
 	background-color: #111;
 	text-align: center;
 	color: #999;
 }
 
-@media screen and (max-width: 326px) {
+@media screen and (max-width: 340px) {
 	.fa-brands span {
 		display: none;
 	}
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 1134px) {
 	.imovel {
 		flex: 40%;
-    	max-width: 60%;
+    	max-width: 49%;
 	}
 	form {
 		width: 70%;
@@ -292,26 +274,21 @@ footer {
 	}
 
 	.items li {
+		width: 100%;
+	}
+	 
+	.items li a {
+		text-align: center;
 		display: block;
-	}
-
-	li .fa-brands {
-		padding: 14px 10px;
-		font-size: 18px;
-	}
-
-	.fa-solid {
-		padding: 14px 10px;
-		font-size: 18px;
+		width: 100%;
 	}
 
 	li a {
-		padding: 10px;
-		font-size: 15px;
+		padding: 14px 10px;
+		font-size: 18px;
 	}
 
 	ul #nav2{
-		opacity:0.9;
 		background-color: #333;
 	}
 
@@ -331,10 +308,10 @@ footer {
 }
 
 
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 652px) {
 	.imovel {
 		flex: 100%;
-    	max-width: 100%;
+    	max-width: 70%;
 	}
 	.bg span {
 		display: none;
